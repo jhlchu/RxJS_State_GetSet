@@ -4,7 +4,7 @@ import { of, asObservable } from "rxjs";
 import { map } from "rxjs/operators";
 import { CustomText$ } from "./States";
 
-export default function View1() {
+export default function View3() {
   const [CustomText, SetCustomerText] = useState(false);
   useEffect(() => {
     CustomText$.subscribe(res => {
@@ -16,7 +16,7 @@ export default function View1() {
 
   return (
     <div>
-      <h1>1</h1>
+      <h1>3</h1>
       <input
         type="text"
         name="set"
